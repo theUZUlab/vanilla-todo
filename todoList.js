@@ -1,10 +1,10 @@
 const todoList = document.querySelector('ul');
 const resultText = document.querySelector('input');
-const resultBtn = document.querySelector('#resultBtn');
+const resultBtn = document.getElementId('resultBtn');
 
 resultBtn.addEventListener('click', (e) => {
     if (resultText.value.trim() === '') {
-        console.log('빈 값 들어가서 생성 취소');
+        console.log('빈 값 생성 취소');
         resultText.value = '';
         return;
     }
