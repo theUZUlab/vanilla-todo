@@ -1,6 +1,6 @@
 const todoList = document.querySelector('ul');
 const resultText = document.querySelector('input');
-const resultBtn = document.getElementId('resultBtn');
+const resultBtn = document.getElementById('resultBtn');
 
 resultBtn.addEventListener('click', (e) => {
     if (resultText.value.trim() === '') {
