@@ -24,8 +24,6 @@ resultBtn.addEventListener('click', (e) => {
 });
 
 todoList.addEventListener('click', (e) => {
-    let delResult = false;
-
     if (e.target.tagName === 'BUTTON') {
         delResult = confirm('정말로 삭제하시겠습니까?');
         console.log('삭제하실?');
