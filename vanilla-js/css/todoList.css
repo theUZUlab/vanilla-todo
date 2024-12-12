@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Dovemayo_gothic';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@media (min-width: 501px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 5px;
+    }
+}
+
+:root {
+    --main-color: rgb(104, 129, 163);
+    --white-color: white;
+    --gray-color: #757575;
+    --shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.199);
+}
+
+body {
+    background-color: #e1f1fa;
+}
+
+body * {
+    font-family: 'Dovemayo_gothic';
+    box-sizing: border-box;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1,
+ul,
+.inputWrap {
+    width: 60rem;
+    height: 5rem;
+    background-color: var(--white-color);
+    box-shadow: var(--shadow);
+    line-height: 5rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+ul {
+    margin: 2rem 0 2rem;
+    padding: 4rem;
+    height: 40rem;
+    overflow: auto;
+}
+ul::-webkit-scrollbar {
+    display: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    line-height: 3rem;
+    color: var(--gray-color);
+}
+
+button {
+    width: 3.5rem;
+    color: var(--main-color);
+    font-size: 2.5rem;
+}
+
+.inputWrap {
+    display: inline-block;
+    padding: 0 4rem;
+    height: 5rem;
+}
+
+input {
+    width: 47.9rem;
+    height: 3rem;
+}
+input::placeholder {
+    color: var(--gray-color);
+}
