@@ -6,48 +6,48 @@
 @font-face {
   font-family: 'Pretendard';
   src:
-    url('/Pretendard-Light.woff2') format('woff2'),
-    url('/Pretendard-Light.woff') format('woff');
+    url('/fonts/Pretendard-Light.woff2') format('woff2'),
+    url('/fonts/Pretendard-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: 'Pretendard';
   src:
-    url('/Pretendard-Regular.woff2') format('woff2'),
-    url('/Pretendard-Regular.woff') format('woff');
+    url('/fonts/Pretendard-Regular.woff2') format('woff2'),
+    url('/fonts/Pretendard-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Pretendard';
   src:
-    url('/Pretendard-Medium.woff2') format('woff2'),
-    url('/Pretendard-Medium.woff') format('woff');
+    url('/fonts/Pretendard-Medium.woff2') format('woff2'),
+    url('/fonts/Pretendard-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: 'Pretendard';
   src:
-    url('/Pretendard-SemiBold.woff2') format('woff2'),
-    url('/Pretendard-SemiBold.woff') format('woff');
+    url('/fonts/Pretendard-SemiBold.woff2') format('woff2'),
+    url('/fonts/Pretendard-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: 'Pretendard';
   src:
-    url('/Pretendard-Bold.woff2') format('woff2'),
-    url('/Pretendard-Bold.woff') format('woff');
+    url('/fonts/Pretendard-Bold.woff2') format('woff2'),
+    url('/fonts/Pretendard-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: 'Pretendard';
   src:
-    url('/Pretendard-Black.woff2') format('woff2'),
-    url('/Pretendard-Black.woff') format('woff');
+    url('/fonts/Pretendard-Black.woff2') format('woff2'),
+    url('/fonts/Pretendard-Black.woff') format('woff');
   font-weight: 900;
   font-style: normal;
 }
@@ -55,4 +55,43 @@
 /* 기본 스타일 정의 */
 body {
   font-family: 'Pretendard', Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.625;
+  color: #4f4f4f;
+}
+
+.text-title {
+  @apply text-2xl font-bold text-dark-gray;
+}
+
+.text-strong {
+  @apply text-dark-gray font-semibold;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 1024px) {
+  .text-title {
+    font-size: 20px;
+  }
+  body {
+    font-size: 14px;
+  }
+  .logo {
+    width: 301px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-title {
+    font-size: 18px;
+  }
+  body {
+    font-size: 12px;
+  }
+  .logo {
+    width: 160px;
+    height: 48px;
+  }
 }
