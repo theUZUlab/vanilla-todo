@@ -3,14 +3,14 @@
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import Logo from '../public/images/Logo.svg';
+import Logo from '../public/images/main-logo.svg';
 
 export default function Home() {
   const router = useRouter();
 
   return (
     <main className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-2xl">
-      <header>
+      <header className="">
         <h1 className="flex flex-col items-center mb-6">
           <Image
             src={Logo}
